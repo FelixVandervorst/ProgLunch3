@@ -7,3 +7,7 @@ This file presents the first programming Lunch Session. The agenda is as follows
 2) Manipulating objects in R.
 
 3) First Data Analytics application.
+
+4) logics, loops and functions
+
+5) Wrap up.
