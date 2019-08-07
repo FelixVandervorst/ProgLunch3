@@ -23,7 +23,7 @@ if(a[1] == b[1] | a[1] == c[1]){
   print("the condition is not respected")
 }
 
-# or 'ifelse' provides a easy vectorised alternative.
+# or'ifelse' provides a easy vectorised alternative.
 ifelse(a == b | a == c, "This condition is hit", "the condition is not respected")  
 
 #### 2. Loops ####

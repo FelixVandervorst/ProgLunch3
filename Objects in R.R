@@ -5,7 +5,7 @@ a <- 1 # Here we assign value 1 to variable 'a'
 
 print(a) # Here we tell R to print the value in 'a'. You can also just type 'a', the print is implicit.
 
-b <- "aze" # we do the same with some text here.
+b <- "this is a text" # we do the same with some text here.
 
 class(a) # Here we ask R to show us the 'class' of variable 'a' (important for its internal representation, i.e. how to store it)
 class(b) # Same with b
@@ -14,18 +14,13 @@ class(b) # Same with b
 
 a <- c(1,2,3,4) # here 'c' is a function which combine values into a vector or List
 
-a <- 1:4 # this is equivalent in R, ':' refers to a sequence between two numbers.
+a <- 1:4 # is this the exact same thing ?
 
 a # here we print 'a'
 
 a[1] # here we print only first element of 'a'
 
-class(a)
-
 b <- c(1,3,"text")
-
-class(b) # what happened here ?
-
 
 #### Lists ####
 
@@ -63,6 +58,10 @@ mydata[1,2] # similar to matrices we can select row-col observations
 
 mydata$Sepal.Length # we can also select a specific variable using '$' sign.
 
+# Exercice: present a figure to illustrate a subset of my data
+myrows <- 1:80 # we assign a sequence of number 1 to 80 myrows
+mycols <- 3:5 # same here with columns.
 
+mydata <- iris[myrows,mycols] # here we subset our initial data.frame 
 
-
+plot(mydata$Petal.Length,mydata$Petal.Width,col=mydata$Species) # and use a plot method on data.frame to visualise it.
